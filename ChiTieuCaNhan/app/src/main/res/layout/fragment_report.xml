@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/btbRlui"
+        android:src="@drawable/img_lui"
+        android:layout_marginStart="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/txtMouthYears"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btbRTien"
+        app:layout_constraintStart_toEndOf="@+id/btbRlui"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="9/2024" />
+
+    <ImageView
+        android:src="@drawable/img_tien"
+        android:layout_marginEnd="50dp"
+        android:id="@+id/btbRTien"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinPhai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinTrai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinGiua"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <LinearLayout
+        android:id="@+id/linearChi"
+        android:padding="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinGiua"
+        app:layout_constraintStart_toStartOf="@+id/guidelinTrai"
+        app:layout_constraintTop_toBottomOf="@+id/txtMouthYears">
+
+        <TextView
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="Chi"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearTienChi"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:padding="1dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinPhai"
+        app:layout_constraintStart_toStartOf="@+id/guidelinGiua"
+        app:layout_constraintTop_toBottomOf="@+id/txtMouthYears">
+
+        <TextView
+            android:id="@+id/txtTienChi"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="0 VNĐ"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearThu"
+        android:padding="1dp"
+        android:background="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinGiua"
+        app:layout_constraintStart_toStartOf="@+id/guidelinTrai"
+        app:layout_constraintTop_toBottomOf="@+id/linearChi">
+
+        <TextView
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="Thu"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linealinearTienThu"
+        android:background="@color/black"
+        android:padding="1dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinPhai"
+        app:layout_constraintStart_toStartOf="@+id/guidelinGiua"
+        app:layout_constraintTop_toBottomOf="@+id/linearTienChi">
+
+        <TextView
+            android:id="@+id/txtTienThu"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="0 VNĐ"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearThuNhap"
+        android:padding="1dp"
+        android:background="@color/black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinGiua"
+        app:layout_constraintStart_toStartOf="@+id/guidelinTrai"
+        app:layout_constraintTop_toBottomOf="@+id/linearThu">
+
+        <TextView
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:text="Thu Nhập"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linealinearThuNhap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="1dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinPhai"
+        app:layout_constraintStart_toStartOf="@+id/guidelinGiua"
+        app:layout_constraintTop_toBottomOf="@+id/linealinearTienThu">
+
+        <TextView
+            android:id="@+id/txtTienThuNhap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            tools:text="0 VNĐ"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/tgbDanhMuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearThuNhap"
+        app:singleSelection="true">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDanhMucChi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#5DB075"
+            android:elevation="-15dp"
+            android:text="Chi"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDanhMucThu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:elevation="10dp"
+            android:text="Thu"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tgbDanhMuc">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tgbDanhMuc">
+
+            <FrameLayout
+                android:id="@+id/flDanhMuc"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvItem"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                tools:listitem="@layout/item_view_thuchi_report" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
